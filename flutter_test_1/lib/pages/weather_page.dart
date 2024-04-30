@@ -19,6 +19,7 @@ class _WeatherPageState extends State<WeatherPage> {
   _fetchWeather() async {
     // get the current city
     String cityName = await _weatherSerivce.getCurrentCity(); //현재 도시이름 가지고 온다!
+    String cityName = "Seoul"; // hard coding => 일단 임시로 현재 자기자신의 위치를 못가지고 오는 듯함
 
     // get weather for city
     try {
